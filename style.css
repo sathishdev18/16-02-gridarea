@@ -1,0 +1,36 @@
+.main{
+    background-color: blue;
+    width: 80%;
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    text-align: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:'header header header'
+                        'menu main Right'
+                        'menu footer footer'                        
+}
+.main>div{
+    background-color: aquamarine;
+  
+    
+}
+
+
+.m1{
+    grid-area: header;
+    
+}
+.m2{
+    grid-area:menu;
+}
+.m3{
+    grid-area: main;
+}
+.m4{
+    grid-area: Right;
+}
+.m5{
+    grid-area: footer;
+}
